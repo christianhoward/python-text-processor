@@ -123,10 +123,10 @@ class Form( QDialog):
         return count
     #Button Execution Methods
     def button1Pressed(self):
-        #For Windows -- Update variable f to the correct directory 'C:/Users/**INSERT FULL DIRECTORY HERE**' + g
-        #For Mac -- Update variable f to the correct directory
+        #For Windows -- Update variable f to the absolute file path ('C:/Users/**INSERT FULL DIRECTORY HERE**') + g or relative file path '.\' + g
+        #For Mac -- Update variable f to the absolute file path (/Users/**INSERT FULL DIRECTORY HERE**') + g or keep relative file path in line 177
         g = str(self.lineedit1.text())
-        f = '/Users/christianhoward/Documents/Python/' + g
+        f = './' + g
         try:
             with open(f) as load: #opens file, sets load.readlines = self.lines, then closes program
                 self.lines = load.readlines()

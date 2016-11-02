@@ -88,7 +88,7 @@ class Form( QDialog):
         for line in self.lines:
             linecount = linecount + 1
         return linecount
-    #Count a Specific Word
+    #Count Number of Times a Specific Word Appears in the .txt File
     def specificword(self, word):
         count = 0
         for line in self.lines:
@@ -101,6 +101,7 @@ class Form( QDialog):
                 else:
                     count = count + 0
         return count
+    #Enter two words and see how often word 2 appears right after word 1
     def w2followsw1(self, word1, word2):
         count = 0
         for line in self.lines:
@@ -111,6 +112,7 @@ class Form( QDialog):
             else:
                 count = count + 0
         return count
+    #Enter two words and see how often word 1 appears right after word 2
     def w1followsw2(self, word1, word2):
         count = 0
         for line in self.lines:

@@ -1,6 +1,6 @@
 # Python Text Processor
 
-A .txt processor built using Python 2.7 and PyQt4
+A .txt processor built using Python 2.7 and PyQt4.
 
 ## Requirements
 - Python 2.7
